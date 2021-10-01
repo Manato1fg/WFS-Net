@@ -14,8 +14,8 @@ optional arguments:
 
   - --k1 [default=4] <p>The number of regions cropped from original and masked images.</p>
 
-  - --database [default="database"] <p>The name of a folder which includes the dataset images used as WSFS.</p> <p>The images will be resized as the longer edge become 128 px conserving its aspect, then k pieces of 128x128 regions will be randomly cropped.</p>
-  - --k2 [default=1] <p>The number of regions cropped from original and masked images.</p>
+  - --database [default="database"] <p>The name of a folder which includes the dataset images used as WSFS.</p> <p>The images will be resized as the longer edge become 128 px conserving its aspect, then k2 pieces of 128x128 regions will be randomly cropped.</p>
+  - --k2 [default=1] <p>The number of regions cropped from database images.</p>
   - --n [default=10] <p>The size of WSFS</p>
   - --epoch [default=100] <p>The number of epoch</p>
   - --checkpoints [default="checkpoints"] <p>The name of a folder in which checkpoints files will be created.</p>
