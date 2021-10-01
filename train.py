@@ -150,8 +150,8 @@ def main(args):
         n = 1
         for x, y in tf.data.Dataset.zip((X, Y)):
             loss = train_step(x, y, args.n)
-            losses[e] += loss.numpy() / (500 * K1)
-            print("\r{:.2f}% ".format(n * BATCH_SIZE / (5 * K1)), end="")
+            losses[e] += loss.numpy() / (N * K1) * 100 * BATCH_SIZE
+            print("\r{:.2f}% ".format(n / (N * K1) * 100 * BATCH_SIZE), end="")
             n += 1
         print(" ... Done")
         if (e + 1) % 10 == 0:
